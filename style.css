@@ -1,5 +1,5 @@
 /* ===========================
-   Fauno — Modern Restaurant Site
+   Fauno — Autentisk Italiensk
    =========================== */
 
 /* --- Reset & Base --- */
@@ -10,21 +10,23 @@
 }
 
 :root {
-  --color-bg: #faf9f6;
+  --color-bg: #F7F7F7;
   --color-surface: #ffffff;
-  --color-surface-alt: #f3f1ec;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6b6b;
-  --color-accent: #b8432f;
-  --color-accent-hover: #9a3727;
-  --color-accent-light: #fdf0ee;
-  --color-border: #e8e6e1;
-  --color-dark: #1a1a1a;
-  --color-dark-surface: #242424;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --radius: 12px;
-  --radius-sm: 8px;
+  --color-surface-alt: #F0EBE3;
+  --color-text: #1D1B20;
+  --color-text-muted: #4F4E4B;
+  --color-accent: #EC693D;
+  --color-accent-hover: #D45A30;
+  --color-accent-light: #FDF0EB;
+  --color-border: #DDDDDD;
+  --color-dark: #1D1B20;
+  --color-dark-surface: #2A2725;
+  --color-wine: #722f37;
+  --font-logo: 'Damion', cursive;
+  --font-heading: 'Roboto', -apple-system, sans-serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --radius: 10px;
+  --radius-sm: 6px;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
   --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
@@ -67,10 +69,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav.scrolled {
-  background: rgba(255,255,255,0.95);
+  background: rgba(29,27,32,0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
 
 .nav-inner {
@@ -81,15 +83,15 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
+  font-family: var(--font-logo);
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EC693D;
   transition: color var(--transition);
 }
 
 .nav.scrolled .nav-logo {
-  color: var(--color-text);
+  color: #EC693D;
 }
 
 .nav-links {
@@ -104,19 +106,19 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   color: rgba(255,255,255,0.85);
   transition: color var(--transition);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .nav.scrolled .nav-links a {
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,0.7);
 }
 
 .nav-links a:hover {
-  color: #fff;
+  color: #EC693D;
 }
 
 .nav.scrolled .nav-links a:hover {
-  color: var(--color-text);
+  color: #EC693D;
 }
 
 .nav-cta {
@@ -154,7 +156,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav.scrolled .nav-toggle span {
-  background: var(--color-text);
+  background: #fff;
 }
 
 /* --- Hero --- */
@@ -167,18 +169,18 @@ a { color: inherit; text-decoration: none; }
   background:
     linear-gradient(
       180deg,
-      rgba(0,0,0,0.55) 0%,
-      rgba(0,0,0,0.35) 50%,
-      rgba(0,0,0,0.6) 100%
+      rgba(29,27,32,0.7) 0%,
+      rgba(29,27,32,0.4) 40%,
+      rgba(29,27,32,0.75) 100%
     ),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a1a" width="1200" height="800"/><circle cx="600" cy="400" r="300" fill="%23222" opacity="0.5"/></svg>') center/cover no-repeat;
-  background-color: #2c1810;
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231D1B20" width="1200" height="800"/><rect fill="%23251F1A" x="0" y="0" width="600" height="800" opacity="0.5"/><circle cx="600" cy="400" r="300" fill="%23EC693D" opacity="0.03"/></svg>') center/cover no-repeat;
+  background-color: #1D1B20;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(29,27,32,0.4) 100%);
 }
 
 .hero-content {
@@ -189,30 +191,33 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-tagline {
+  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
+  color: #EC693D;
   margin-bottom: 20px;
 }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(3.5rem, 10vw, 7rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin-bottom: 20px;
+  font-family: var(--font-logo);
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+  color: #EC693D;
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
   font-weight: 300;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.75);
   max-width: 500px;
   margin: 0 auto 40px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -235,7 +240,7 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
   transition: all var(--transition);
   border: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .btn-primary {
@@ -246,7 +251,7 @@ a { color: inherit; text-decoration: none; }
 .btn-primary:hover {
   background: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(184,67,47,0.3);
+  box-shadow: 0 6px 24px rgba(236,105,61,0.3);
 }
 
 .btn-takeaway {
@@ -263,12 +268,13 @@ a { color: inherit; text-decoration: none; }
 .btn-outline {
   background: transparent;
   color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.4);
+  border: 1.5px solid rgba(255,255,255,0.35);
 }
 
 .btn-outline:hover {
-  border-color: #fff;
-  background: rgba(255,255,255,0.1);
+  border-color: #EC693D;
+  color: #EC693D;
+  background: rgba(236,105,61,0.08);
   transform: translateY(-2px);
 }
 
@@ -282,6 +288,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .section-label {
+  font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -297,12 +304,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .section-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin-bottom: 16px;
+  color: var(--color-text);
 }
 
 .section-desc {
@@ -348,7 +356,7 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--color-accent-light);
   color: var(--color-accent);
   display: flex;
@@ -445,9 +453,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .menu-item-name {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .menu-item-badge {
@@ -499,13 +507,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .wine-tab:hover {
-  border-color: #722f37;
-  color: #722f37;
+  border-color: var(--color-wine);
+  color: var(--color-wine);
 }
 
 .wine-tab.active {
-  background: #722f37;
-  border-color: #722f37;
+  background: var(--color-wine);
+  border-color: var(--color-wine);
   color: #fff;
 }
 
@@ -548,9 +556,9 @@ a { color: inherit; text-decoration: none; }
 
 .wine-card-title {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-text);
   margin-bottom: 4px;
 }
@@ -660,9 +668,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .contact-card h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 
@@ -732,10 +740,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .footer-logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
+  font-family: var(--font-logo);
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EC693D;
 }
 
 .footer-brand p {
@@ -754,7 +762,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #EC693D;
 }
 
 .footer-copy {
@@ -795,7 +803,7 @@ a { color: inherit; text-decoration: none; }
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: var(--color-surface);
+    background: var(--color-dark);
     flex-direction: column;
     padding: 80px 32px 32px;
     gap: 0;
@@ -808,9 +816,9 @@ a { color: inherit; text-decoration: none; }
   }
 
   .nav-links a {
-    color: var(--color-text) !important;
+    color: rgba(255,255,255,0.8) !important;
     padding: 16px 0;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     width: 100%;
     display: block;
     font-size: 1rem;
