@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fauno Café Vinbar Pizzeria — Gjøvik</title>
+  <meta name="description" content="Ekte italiensk pizza bakt i steinovn. Fauno Café Vinbar Pizzeria i Gjøvik serverer autentisk napolitansk pizza, pasta, og hjemmelagde desserter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">Fauno</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#om">Om oss</a></li>
+        <li><a href="#meny">Meny</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="tel:+4790095155" class="nav-cta">Ring oss</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-tagline">Café &middot; Vinbar &middot; Pizzeria</p>
+      <h1 class="hero-title">Fauno</h1>
+      <p class="hero-subtitle">Autentisk napolitansk pizza bakt i steinovn &mdash; midt i Gjøvik</p>
+      <div class="hero-actions">
+        <a href="#meny" class="btn btn-primary">Se menyen</a>
+        <a href="tel:+4790095155" class="btn btn-outline">Bestill bord</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="om">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-label">Om oss</p>
+          <h2 class="section-title">Ekte italiensk håndverk</h2>
+          <p class="about-desc">
+            Fauno er en koselig italiensk restaurant i hjertet av Gjøvik. Vår pizza bakes fra bunnen av med tradisjonelle italienske teknikker og fylles med førsteklasses ingredienser. Pizzaen stekes i vår ved- og gassfyrte steinovn på cirka 400 grader.
+          </p>
+          <p class="about-desc">
+            Vi serverer også deilig pasta, hjemmelagde desserter, og har et omfattende utvalg av vin, øl og alkoholfrie drikker.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <strong>Steinovn</strong>
+                <span>~400&deg;C vedovn</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <div>
+                <strong>Håndlaget</strong>
+                <span>Ekte italienske oppskrifter</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <strong>Glutenfri</strong>
+                <span>Alle pizzaer kan lages glutenfrie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <svg width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke-linecap="round"/><path d="M8 12l2-3 3 4 2-2 3 4H6z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section section-alt" id="meny">
+    <div class="container">
+      <p class="section-label center">Vår meny</p>
+      <h2 class="section-title center">Pizza fra steinovnen</h2>
+      <p class="section-desc center">Alle pizzaer er ca. 30 cm og bakes i vår steinovn. Kan lages glutenfrie.</p>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="pizza">Pizza</button>
+        <button class="menu-tab" data-tab="pasta">Pasta</button>
+        <button class="menu-tab" data-tab="annet">Antipasti &amp; Dessert</button>
+        <button class="menu-tab" data-tab="drikke">Drikke</button>
+      </div>
+
+      <!-- Pizza -->
+      <div class="menu-grid" id="tab-pizza">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Margherita</h3>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella, fersk bøffel-mozzarella og basilikum</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Skinke</h3>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella og kokt skinke</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Capricciosa</h3>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella, champignon, artisjokk, sort oliven og kokt skinke</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Diavola</h3>
+            <span class="menu-item-badge">Sterk</span>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella, marinert paprika, sort oliven og sterk salamipølse</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">N'duja</h3>
+            <span class="menu-item-badge">Sterk</span>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella, rødløk, sterk salamipølse og n'duja</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Salsiccia</h3>
+          </div>
+          <p class="menu-item-desc">San Marzano tomatsaus, mozzarella, mascarpone-ost, hvitløksolje, fersk italiensk pølse og sterk salamipølse</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tartufo</h3>
+          </div>
+          <p class="menu-item-desc">Mozzarella, mascarpone-ost, husets soppblanding, trøffelolje og parmesandryss</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Quattro Formaggi</h3>
+          </div>
+          <p class="menu-item-desc">Mozzarella, gorgonzola, taleggio og parmesandryss</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Parma</h3>
+          </div>
+          <p class="menu-item-desc">Mozzarella og fersk bøffel-mozzarella, med ruccola, cherrytomat, parmaskinke, parmesan og olivenolje</p>
+        </div>
+      </div>
+
+      <!-- Pasta -->
+      <div class="menu-grid hidden" id="tab-pasta">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Carbonara</h3>
+          </div>
+          <p class="menu-item-desc">Klassisk italiensk carbonara med guanciale, egg, pecorino og svart pepper</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Gnocchi</h3>
+          </div>
+          <p class="menu-item-desc">Hjemmelagde gnocchi med husets saus</p>
+        </div>
+      </div>
+
+      <!-- Antipasti & Dessert -->
+      <div class="menu-grid hidden" id="tab-annet">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Bruschetta</h3>
+          </div>
+          <p class="menu-item-desc">Ristet brød med ferske tomater, basilikum, hvitløk og olivenolje</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tagliere Italiano</h3>
+          </div>
+          <p class="menu-item-desc">Italiensk charcuterie-brett med utvalgte kjøttvarer og oster</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Dessert</h3>
+          </div>
+          <p class="menu-item-desc">Hjemmelagde desserter — spør servitøren om dagens utvalg</p>
+        </div>
+      </div>
+
+      <!-- Drikke -->
+      <div class="menu-grid hidden" id="tab-drikke">
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Vinmeny</h3>
+          </div>
+          <p class="menu-item-desc">Omfattende utvalg av italienske og internasjonale viner. Spør servitøren for anbefalinger.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Øl</h3>
+          </div>
+          <p class="menu-item-desc">Godt utvalg av øl på flaske og fat</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Italiensk brus</h3>
+          </div>
+          <p class="menu-item-desc">Økologisk italiensk brus: appelsin, blodappelsin og sitron</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Iste</h3>
+          </div>
+          <p class="menu-item-desc">Forfriskende italiensk iste</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Alkoholfritt</h3>
+          </div>
+          <p class="menu-item-desc">Mineralvann, juice og andre alkoholfrie alternativer</p>
+        </div>
+      </div>
+
+      <p class="menu-note">For fullstendig meny med priser, besøk oss i restauranten eller bestill via vår app.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <p class="section-label center">Besøk oss</p>
+      <h2 class="section-title center">Kontakt &amp; Åpningstider</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Adresse</h3>
+          <p>Jernbanegata 7</p>
+          <p>2815 Gjøvik</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Telefon</h3>
+          <p><a href="tel:+4790095155">900 95 155</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Åpningstider</h3>
+          <div class="hours">
+            <div class="hours-row">
+              <span>Tirsdag &ndash; Torsdag</span>
+              <span>16:00 &ndash; 20:45</span>
+            </div>
+            <div class="hours-row">
+              <span>Fredag</span>
+              <span>16:00 &ndash; 20:45</span>
+            </div>
+            <div class="hours-row">
+              <span>Lørdag &ndash; Søndag</span>
+              <span>15:00 &ndash; 20:45</span>
+            </div>
+            <div class="hours-row closed">
+              <span>Mandag</span>
+              <span>Stengt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map embed -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1922.5!2d10.6917!3d60.7957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJernbanegata+7%2C+2815+Gj%C3%B8vik!5e0!3m2!1sno!2sno!4v1700000000000!5m2!1sno!2sno"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Fauno på kartet">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fauno</span>
+        <p>Café &middot; Vinbar &middot; Pizzeria</p>
+      </div>
+      <div class="footer-links">
+        <a href="#om">Om oss</a>
+        <a href="#meny">Meny</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Fauno Café Vinbar Pizzeria. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
