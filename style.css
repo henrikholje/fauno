@@ -249,6 +249,17 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 6px 24px rgba(184,67,47,0.3);
 }
 
+.btn-takeaway {
+  background: #27ae60;
+  color: #fff;
+}
+
+.btn-takeaway:hover {
+  background: #219a52;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(39,174,96,0.3);
+}
+
 .btn-outline {
   background: transparent;
   color: #fff;
@@ -361,26 +372,12 @@ a { color: inherit; text-decoration: none; }
   position: relative;
 }
 
-.about-image-placeholder {
+.about-img {
   width: 100%;
   aspect-ratio: 4/5;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #3d2216 0%, #5a3425 50%, #2c1810 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.2);
-  overflow: hidden;
-}
-
-.about-image-placeholder::before {
-  content: 'FAUNO';
-  position: absolute;
-  font-family: var(--font-display);
-  font-size: 4rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.06);
-  letter-spacing: 0.1em;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
 }
 
 /* --- Menu --- */
@@ -623,7 +620,7 @@ a { color: inherit; text-decoration: none; }
     order: -1;
   }
 
-  .about-image-placeholder {
+  .about-img {
     aspect-ratio: 16/9;
   }
 
