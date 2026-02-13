@@ -447,9 +447,13 @@ a { color: inherit; text-decoration: none; }
 .menu-item-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 8px;
-  gap: 12px;
+  gap: 8px;
+}
+
+.menu-item-header .menu-item-name {
+  margin-right: auto;
 }
 
 .menu-item-name {
@@ -467,6 +471,14 @@ a { color: inherit; text-decoration: none; }
   background: var(--color-accent-light);
   padding: 4px 10px;
   border-radius: 100px;
+  white-space: nowrap;
+}
+
+.menu-item-price {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
   white-space: nowrap;
 }
 
